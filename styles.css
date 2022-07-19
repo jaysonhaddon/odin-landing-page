@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -46,18 +46,33 @@ a {
   display: flex;
   justify-content: space-between;
   color: #E5E7EB;
-  gap: 32px;
 }
 
 .text-container {
   display: flex;
   flex-flow: column wrap;
-  gap: 10px;
-  width: 500px;
+  width: 400px;
+  gap: 10px
 }
 
-.text-container button {
-  max-width: 100px;
+.text-container > * {
+  margin: 0;
+}
+
+.text-container h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.header-button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
 }
 
 .img-container {
@@ -66,4 +81,28 @@ a {
   justify-content: center;
   align-items: center;
   width: 500px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  border: 5px solid blue;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
 }
